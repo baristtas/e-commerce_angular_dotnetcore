@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KgJiMl1h7TjUYmOtJRipkXiGWrQ0Q7Nr2KmHLCwc9aa4H06mlxKqwXbV7Bw50H82ZM6zHMjT9S0WZ7xDKHDmeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baris.tas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

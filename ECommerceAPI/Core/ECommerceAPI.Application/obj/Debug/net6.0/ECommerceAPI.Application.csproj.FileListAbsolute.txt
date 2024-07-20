@@ -1,0 +1,15 @@
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\bin\Debug\net6.0\ECommerceAPI.Application.deps.json
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\bin\Debug\net6.0\ECommerceAPI.Application.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\bin\Debug\net6.0\ECommerceAPI.Application.pdb
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\bin\Debug\net6.0\ECommerceAPI.Domain.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\bin\Debug\net6.0\ECommerceAPI.Domain.pdb
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.csproj.AssemblyReference.cache
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.AssemblyInfoInputs.cache
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.AssemblyInfo.cs
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.csproj.CoreCompileInputs.cache
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerc.F181CD37.Up2Date
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\refint\ECommerceAPI.Application.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.pdb
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ref\ECommerceAPI.Application.dll
