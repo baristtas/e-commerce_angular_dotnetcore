@@ -13,3 +13,4 @@ C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\refint\ECommerceAPI.Application.dll
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.pdb
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ref\ECommerceAPI.Application.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Core\ECommerceAPI.Application\obj\Debug\net6.0\ECommerceAPI.Application.sourcelink.json
