@@ -23,37 +23,15 @@ namespace ECommerceAPI.API.Controllers
             return Ok(products);
         }
 
-        //[Authorize]
-        [HttpPost("MethodName/V4")]
-        public ActionResult<dynamic> MethodName([FromBody] object RequestData,object Xlde) 
+        [HttpGet("Hey/YO/wazzup")]
+        public IActionResult GetProducts([FromBody] int what)
         {
-             var paramArray = JsonConvert.DeserializeObject<dynamic>(RequestData.ToString());
 
-            string ResultCode = "200";
-            string message = "success";
-            bool success = true;
-            string pError = "";
-            dynamic liste = null;
-            try
+            return Ok(new
             {
-                liste = DataAccessName.DataMethodName(paramArray.Parametre1);
-
-            }
-            catch(Exception ex)
-            {
-                success = false;
-                ResultCode = "500";
-                message = ex.Message;
-            }
-
-            return new ObjectResult(
-                new
-                {
-                    success = success,
-                    code = ResultCode,
-                    message = message,
-                    data = liste
-                });
+                za = what,
+                xd = 31
+            });
         }
     }
 }

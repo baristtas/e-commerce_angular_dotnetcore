@@ -59,3 +59,10 @@ C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\baris.tas\Desktop\Format Oncesi\baris_pc_yedek_06-03-24\Repos\Personal\AngularNetCore6ECommerce\ECommerceAPI\Presentation\ECommerceAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
