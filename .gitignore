@@ -482,3 +482,62 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+##########################################################################################################################
+# Visual Studio cache and output files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]ssetsBuild/
+[Bb]in/
+[Oo]bj/
+[Bb]uild[Ll]og/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+# Uncomment if necessary however generally it will be restored from NuGet, no need to commit them.
+# packages/*/ 
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Resharper
+_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.rsuser.osx
+*.sln.ide
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Python Tools for Visual Studio
+__pycache__/
+*.pyc
+
+# Other
+local.settings.json
