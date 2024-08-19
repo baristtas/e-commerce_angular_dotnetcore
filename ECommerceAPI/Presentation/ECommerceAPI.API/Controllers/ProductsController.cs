@@ -1,4 +1,5 @@
 ﻿using ECommerceAPI.Application.Abstractions;
+using ECommerceAPI.Application.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -9,29 +10,44 @@ namespace ECommerceAPI.API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductService m_productService;
-
-        public ProductsController(IProductService productService)
+        private readonly IProductReadRepository _productReadRepository;
+        private readonly IProductWriteRepository _productWriteRepository;
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository)
         {
-            m_productService = productService;
+            _productReadRepository = productReadRepository;
+            _productWriteRepository = productWriteRepository;
         }
 
         [HttpGet]
-        public IActionResult GetProducts()
+        public async void Get()
         {
-            var products = m_productService.GetProducts();
-            return Ok(products);
-        }
-
-        [HttpGet("Hey/YO/wazzup")]
-        public IActionResult GetProducts([FromBody] int what)
-        {
-
-            return Ok(new
+            await _productWriteRepository.AddRangeAsync(new()
             {
-                za = what,
-                xd = 31
+                new() {Id = Guid.NewGuid(), Name = "Product 1", Price = 100,CreatedDate = DateTime.UtcNow,Stock = 10},
+                new() {Id = Guid.NewGuid(), Name = "Product 2", Price = 200,CreatedDate = DateTime.UtcNow,Stock = 20},
+                new() {Id = Guid.NewGuid(), Name = "Product 3", Price = 300,CreatedDate = DateTime.UtcNow,Stock = 30},
+                new() {Id = Guid.NewGuid(), Name = "Product 4", Price = 400,CreatedDate = DateTime.UtcNow,Stock = 40},
+
             });
+            await _productWriteRepository.SaveAsync();
         }
+
+        //[HttpGet]
+        //public IActionResult GetProducts()
+        //{
+        //    var products = m_productService.GetProducts();
+        //    return Ok(products);
+        //}
+
+        //[HttpGet("Hey/YO/wazzup")]
+        //public IActionResult GetProducts([FromBody] int what)
+        //{
+        //
+        //    return Ok(new
+        //    {
+        //        za = what,
+        //        xd = 31
+        //    });
+        //}
     }
 }

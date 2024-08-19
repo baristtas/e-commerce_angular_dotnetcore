@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerceAPI.Domain.Entities.Common;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ECommerceAPI.Application.Repositories
 {
-    public interface IRepository<T> where T : class //T'nin classs olduğunu belirttim.
+    public interface IRepository<T> where T : BaseEntity //T'nin classs olduğunu belirttim.
     {
         DbSet<T> Table { get; }
     }

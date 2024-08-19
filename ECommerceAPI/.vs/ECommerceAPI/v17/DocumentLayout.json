@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\repositories\\readrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2468D43E-FB8F-4BDE-B199-64D2657387D0}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\presentation\\ecommerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468D43E-FB8F-4BDE-B199-64D2657387D0}|Presentation\\ECommerceAPI.API\\ECommerceAPI.API.csproj|solutionrelative:presentation\\ecommerceapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\repositories\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\repositories\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\repositories\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\repositories\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\repositories\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\repositories\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\core\\ecommerceapi.application\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DA7633B-C35A-4A85-AEB2-38256CF2FD39}|Core\\ECommerceAPI.Application\\ECommerceAPI.Application.csproj|solutionrelative:core\\ecommerceapi.application\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|c:\\users\\baris.tas\\desktop\\format oncesi\\baris_pc_yedek_06-03-24\\repos\\personal\\angularnetcore6ecommerce\\ecommerceapi\\infrastructure\\ecommerceapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BE2801-945D-4EF3-B96E-24E23C0ABB2A}|Infrastructure\\ECommerceAPI.Persistence\\ECommerceAPI.Persistence.csproj|solutionrelative:infrastructure\\ecommerceapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -149,59 +145,42 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReadRepository.cs",
-              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Repositories\\ReadRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\Repositories\\ReadRepository.cs",
-              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Repositories\\ReadRepository.cs",
-              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\Repositories\\ReadRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T20:17:59.81Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IWriteRepository.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Repositories\\IWriteRepository.cs",
-              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IWriteRepository.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Repositories\\IWriteRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Title": "WriteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Repositories\\WriteRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\Repositories\\WriteRepository.cs",
+              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\Repositories\\WriteRepository.cs",
+              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\Repositories\\WriteRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA0wDMAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:07:00.357Z",
+              "WhenOpened": "2024-08-19T22:54:41.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IReadRepository.cs",
-              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IReadRepository.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Repositories\\IReadRepository.cs",
-              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IReadRepository.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Repositories\\IReadRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
+              "RelativeToolTip": "Infrastructure\\ECommerceAPI.Persistence\\ServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAACGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:06:33.202Z",
+              "WhenOpened": "2024-08-19T22:54:19.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "Core\\ECommerceAPI.Application\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Core\\ECommerceAPI.Application\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "Core\\ECommerceAPI.Application\\Repositories\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\baris.tas\\Desktop\\Format Oncesi\\baris_pc_yedek_06-03-24\\Repos\\Personal\\AngularNetCore6ECommerce\\ECommerceAPI\\Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\ECommerceAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAMwCIAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:00:54.675Z",
+              "WhenOpened": "2024-08-19T22:38:38.636Z",
               "EditorCaption": ""
             }
           ]
