@@ -20,16 +20,32 @@ namespace ECommerceAPI.Persistence.Repositories
         }
         public DbSet<T> Table => m_context.Set<T>();
 
-        IQueryable<T> IReadRepository<T>.GetAll() => Table;
+        IQueryable<T> IReadRepository<T>.GetAll(bool tracking = true)
+        {
+            if (tracking) return Table;
+            return Table.AsNoTracking();
+        }
 
-        IQueryable<T> IReadRepository<T>.GetWhere(Expression<Func<T, bool>> method)
-            => Table.Where(method);
+        IQueryable<T> IReadRepository<T>.GetWhere(Expression<Func<T, bool>> method, bool tracking = true)
+        {
+            if(tracking) return Table.Where(method);
+            return Table.AsNoTracking();
+        }
 
-        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method)
-        => await Table.FirstOrDefaultAsync(method);
+        public async Task<T> GetSingleAsync(Expression<Func<T, bool>> method, bool tracking = true)
+        {
+            if (tracking) return await Table.FirstOrDefaultAsync(method);
+            return await Table.AsNoTracking().FirstOrDefaultAsync(method);
+        }
 
-        public async Task<T> GetByIdAsync(string id)//Reflection ya da marker ile yapmamız gerek. Çünkü T'nin id değişkeni yok
-        => await Table.FirstOrDefaultAsync<T>(e => e.Id == Guid.Parse(id)); //Markerla yaptık
-        
+        public async Task<T> GetByIdAsync(string id, bool tracking = true)//Reflection ya da marker ile yapmamız gerek. Çünkü T'nin id değişkeni yok
+        {
+            //await Table.FirstOrDefaultAsync<T>(e => e.Id == Guid.Parse(id)); //Markerla yaptık
+            if (tracking) return await Table.FindAsync(Guid.Parse(id));
+            return await Table.AsNoTracking().FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
+        }
+
+        public async Task<int> SaveAsync() => await m_context.SaveChangesAsync();
+
     }
 }

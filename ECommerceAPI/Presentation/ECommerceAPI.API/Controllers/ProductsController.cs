@@ -1,7 +1,10 @@
 ﻿using ECommerceAPI.Application.Abstractions;
 using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Domain.Entities;
+using ECommerceAPI.Domain.Entities.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 
 namespace ECommerceAPI.API.Controllers
@@ -19,35 +22,16 @@ namespace ECommerceAPI.API.Controllers
         }
 
         [HttpGet]
-        public async void Get()
+        public async Task Get()
         {
-            await _productWriteRepository.AddRangeAsync(new()
-            {
-                new() {Id = Guid.NewGuid(), Name = "Product 1", Price = 100,CreatedDate = DateTime.UtcNow,Stock = 10},
-                new() {Id = Guid.NewGuid(), Name = "Product 2", Price = 200,CreatedDate = DateTime.UtcNow,Stock = 20},
-                new() {Id = Guid.NewGuid(), Name = "Product 3", Price = 300,CreatedDate = DateTime.UtcNow,Stock = 30},
-                new() {Id = Guid.NewGuid(), Name = "Product 4", Price = 400,CreatedDate = DateTime.UtcNow,Stock = 40},
 
-            });
-            await _productWriteRepository.SaveAsync();
         }
 
-        //[HttpGet]
-        //public IActionResult GetProducts()
-        //{
-        //    var products = m_productService.GetProducts();
-        //    return Ok(products);
-        //}
-
-        //[HttpGet("Hey/YO/wazzup")]
-        //public IActionResult GetProducts([FromBody] int what)
-        //{
-        //
-        //    return Ok(new
-        //    {
-        //        za = what,
-        //        xd = 31
-        //    });
-        //}
+        [HttpGet("id")]
+        public async Task<IActionResult> Get(string id)
+        {
+            Product prd = await _productReadRepository.GetByIdAsync(id);
+            return Ok(prd);
+        }
     }
 }

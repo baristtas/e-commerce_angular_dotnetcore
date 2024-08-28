@@ -18,7 +18,7 @@ namespace ECommerceAPI.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.ConnectionString),ServiceLifetime.Singleton);
+            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
 
             //services.AddSingleton<IProductService,ProductService>();
             services.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
