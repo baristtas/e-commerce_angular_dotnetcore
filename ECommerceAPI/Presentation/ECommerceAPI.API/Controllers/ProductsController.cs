@@ -22,9 +22,9 @@ namespace ECommerceAPI.API.Controllers
         }
 
         [HttpGet]
-        public async Task Get()
+        public async Task<IActionResult> Get()
         {
-
+            return Ok("Merhaba");
         }
 
         [HttpGet("id")]

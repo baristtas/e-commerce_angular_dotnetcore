@@ -19,8 +19,10 @@ export class AppComponent {
   title = 'ecommerceFrontEnd';
 
   constructor(private toastr : CustomToastrService){
+
   }
 }
+
 
 //$(document).ready(() =>
 //alert("Test alert"));
