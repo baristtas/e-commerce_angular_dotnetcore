@@ -6,5 +6,5 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideToastr } from 'ngx-toastr';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideAnimationsAsync(),provideToastr()]
+  providers: [provideRouter(routes), provideAnimationsAsync(),provideToastr(),{provide : "baseUrl", useValue : "https://localhost:7255/api",multi : true}]
 };
