@@ -4,6 +4,7 @@ import { AdminModule } from './admin/admin.module';
 import { UiModule } from './ui/ui.module';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
 import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { HttpClientModule } from '@angular/common/http';
 
 declare var $:any;
 
@@ -11,7 +12,7 @@ declare var $:any;
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,AdminModule,UiModule,RouterModule,NgxSpinnerModule,NgxSpinnerModule],
+  imports: [RouterOutlet,AdminModule,UiModule,RouterModule,NgxSpinnerModule,NgxSpinnerModule,HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -26,7 +26,12 @@ namespace ECommerceAPI.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(_productReadRepository.GetAll(false));
+            //return Ok(new
+            //{
+            //    cevap = "merhaba"
+            //});
+            
+            return Ok(JsonConvert.SerializeObject(_productReadRepository.GetAll(false)));
         }
         [HttpGet("id")]
         public async Task<IActionResult> Get(string id)
@@ -56,7 +61,7 @@ namespace ECommerceAPI.API.Controllers
             return StatusCode((int)HttpStatusCode.OK);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult>Delete(string id)
         {
             await _productWriteRepository.RemoveAsync(id);

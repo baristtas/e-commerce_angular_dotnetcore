@@ -1,7 +1,7 @@
 import { Component ,OnInit} from '@angular/core';
 import { AlertifyOptions, AlertifyService, MessageType } from '../../../services/admin/alertify.service';
 import { ApplicationSpinners, BaseComponent } from '../../../base/base.component';
-import { NgxSpinnerService } from 'ngx-spinner';
+import { NgxSpinnerService } from 'ngx-spinner'; 
 declare var $ : any
 
 @Component({
