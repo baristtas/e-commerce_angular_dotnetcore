@@ -30,8 +30,8 @@ namespace ECommerceAPI.API.Controllers
             //{
             //    cevap = "merhaba"
             //});
-            
-            return Ok(JsonConvert.SerializeObject(_productReadRepository.GetAll(false)));
+            var datas = JsonConvert.SerializeObject(_productReadRepository.GetAll(false));
+            return Ok(datas);
         }
         [HttpGet("id")]
         public async Task<IActionResult> Get(string id)
@@ -44,6 +44,10 @@ namespace ECommerceAPI.API.Controllers
         [HttpPost]
         public async Task<IActionResult>Post(VM_Create_Product model)
         {
+            if(ModelState.IsValid)
+            {
+
+            }
             await _productWriteRepository.AddAsync(new Product { Name = model.Name, Price = model.Price,Stock = model.Stock });
             await _productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);

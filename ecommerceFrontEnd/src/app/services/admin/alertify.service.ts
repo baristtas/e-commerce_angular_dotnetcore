@@ -38,10 +38,13 @@ export class AlertifyService {
 
     alertify.set('notifier', 'delay', options.delay);
     alertify.set('notifier', 'position', options.position);
-    alertify[options.messageType ?? MessageType.Notify](message);
     if (options.dismissOthers)
-      alertify.dismissOthers();
-
+    {
+      alertify[options.messageType ?? MessageType.Notify](message).dismissOthers();
+    }
+    else{
+      alertify[options.messageType ?? MessageType.Notify](message);
+    }
   }
 
 }
