@@ -30,7 +30,15 @@ namespace ECommerceAPI.API.Controllers
             //{
             //    cevap = "merhaba"
             //});
-            var datas = JsonConvert.SerializeObject(_productReadRepository.GetAll(false));
+            var datas = JsonConvert.SerializeObject(_productReadRepository.GetAll(false).Select(x =>
+            new {
+                x.Id,
+                x.Name,
+                x.Stock,
+                x.Price,
+                x.CreatedDate,
+                x.UpdatedDate
+            }));
             return Ok(datas);
         }
         [HttpGet("id")]

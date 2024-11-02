@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClientService } from '../http-client.service';
 import { Create_Product } from '../../../contracts/create_product';
 import { HttpErrorResponse } from '@angular/common/http';
+import { List_Product } from '../../../contracts/list_product';
 
 @Injectable({
   providedIn: 'root'
@@ -10,9 +11,9 @@ export class ProductService {
 
   constructor(private httpClientService: HttpClientService) { }
 
-  create(ProductToCreate: Create_Product, successCallback?: any, errorCallback?: any) {
+  create(ProductToCreate: Create_Product, successCallback?: () => void, errorCallback?: (errorMessage : string) => void) {
     this.httpClientService.post({ controller: "products" }, ProductToCreate).subscribe(result => {
-      successCallback();
+      if(successCallback)successCallback();
     }, (errorResponse: HttpErrorResponse) => {
       const _error: Array<{ key: string, value: Array<string> }> = errorResponse.error;
       let message = "";
@@ -21,8 +22,20 @@ export class ProductService {
           message += `${_v}<br>`;
         })
       });
-      errorCallback(message);
+      if(errorCallback)errorCallback(message);
     }
     );
   };
+
+  async read(successCallback: () => void, errorCallback : () => void): Promise<List_Product[] | undefined> {
+    const promiseData: Promise<List_Product[] | undefined> = this.httpClientService.get<List_Product[]>({
+      controller: "products",
+
+    }).toPromise();
+
+    promiseData.then().catch();
+
+    return await promiseData;
+  }
+
 }
