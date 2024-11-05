@@ -11,9 +11,9 @@ export class ProductService {
 
   constructor(private httpClientService: HttpClientService) { }
 
-  create(ProductToCreate: Create_Product, successCallback?: () => void, errorCallback?: (errorMessage : string) => void) {
+  create(ProductToCreate: Create_Product, successCallback?: () => void, errorCallback?: (errorMessage: string) => void) {
     this.httpClientService.post({ controller: "products" }, ProductToCreate).subscribe(result => {
-      if(successCallback)successCallback();
+      if (successCallback) successCallback();
     }, (errorResponse: HttpErrorResponse) => {
       const _error: Array<{ key: string, value: Array<string> }> = errorResponse.error;
       let message = "";
@@ -22,20 +22,23 @@ export class ProductService {
           message += `${_v}<br>`;
         })
       });
-      if(errorCallback)errorCallback(message);
+      if (errorCallback) errorCallback(message);
     }
     );
   };
 
-  async read(successCallback: () => void, errorCallback : () => void): Promise<List_Product[] | undefined> {
-    const promiseData: Promise<List_Product[] | undefined> = this.httpClientService.get<List_Product[]>({
+  async read(page: number = 0, size: number = 5, successCallback?: () => void, errorCallback?: (errorMessage: string) => void): Promise<{totalCount : number, datas :List_Product[]} | undefined> {
+    const promiseData: Promise<{totalCount : number, datas :List_Product[]} | undefined> = this.httpClientService.get<{totalCount : number, datas :List_Product[]}>({
       controller: "products",
-
+      queryString: `page=${page}&size=${size}`
     }).toPromise();
 
-    promiseData.then().catch();
-
+    promiseData.then(d => {
+      if (successCallback) successCallback();
+    }
+    ).catch((errorResponse: HttpErrorResponse) => {
+      if (errorCallback) errorCallback(errorResponse.message);
+    });
     return await promiseData;
   }
-
 }

@@ -19,13 +19,13 @@ export class ProductsComponent extends BaseComponent implements OnInit {
     this.showSpinner(ApplicationSpinners.BallAtom);
     let x : Create_Product[];
 
-    this.httpClientService.get<Create_Product[]>({
-      controller: "products"
-    }).subscribe(data =>
-      data.forEach(element => {
-        console.log(element.Name);
-      })
-    );
+    //this.httpClientService.get<Create_Product[]>({
+    //  controller: "products"
+    //}).subscribe(data =>
+    //  data.forEach(element => {
+    //    console.log(element.Name);
+    //  })
+    //);
 
 
     //this.httpClientService.delete({controller : "products"}

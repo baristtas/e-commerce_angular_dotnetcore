@@ -1,5 +1,6 @@
 ﻿using ECommerceAPI.Application.Abstractions;
 using ECommerceAPI.Application.Repositories;
+using ECommerceAPI.Application.RequestParameters;
 using ECommerceAPI.Application.ViewModels.Products;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Domain.Entities.Common;
@@ -24,22 +25,29 @@ namespace ECommerceAPI.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
         {
             //return Ok(new
             //{
             //    cevap = "merhaba"
             //});
-            var datas = JsonConvert.SerializeObject(_productReadRepository.GetAll(false).Select(x =>
-            new {
+            var productCount = _productReadRepository.GetAll(false).Count();
+            var datas = _productReadRepository.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size).Select(x =>
+            new
+            {
                 x.Id,
                 x.Name,
                 x.Stock,
                 x.Price,
                 x.CreatedDate,
                 x.UpdatedDate
-            }));
-            return Ok(datas);
+            }).ToList();
+
+            return Ok(new
+            {
+                productCount,
+                datas
+            });
         }
         [HttpGet("id")]
         public async Task<IActionResult> Get(string id)

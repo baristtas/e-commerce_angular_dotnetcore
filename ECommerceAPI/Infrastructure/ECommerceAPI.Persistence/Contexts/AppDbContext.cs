@@ -24,7 +24,11 @@ namespace ECommerceAPI.Persistence.Contexts
         {
             this.ChangeTracker.Entries<BaseEntity>().ToList().ForEach(e =>
             {
-                if(e.State == EntityState.Added) e.Entity.CreatedDate = DateTime.UtcNow;
+                if (e.State == EntityState.Added)
+                {
+                    e.Entity.CreatedDate = DateTime.UtcNow;
+                    e.Entity.UpdatedDate = DateTime.UtcNow;
+                } 
                 else if(e.State == EntityState.Modified) e.Entity.UpdatedDate = DateTime.UtcNow;
             });
 
