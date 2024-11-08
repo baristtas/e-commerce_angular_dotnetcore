@@ -7,6 +7,7 @@ import { ApplicationSpinners, BaseComponent } from '../../../../base/base.compon
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AlertifyService, MessageType, Position } from '../../../../services/admin/alertify.service';
 
+declare var $ : any;
 
 @Component({
   selector: 'app-list',
@@ -14,13 +15,13 @@ import { AlertifyService, MessageType, Position } from '../../../../services/adm
   styleUrl: './list.component.scss'
 })
 export class ListComponent extends BaseComponent implements OnInit, AfterViewInit {
-
+  member: string = 'Merhaba, Angular!';
   constructor(private productService: ProductService, private spinnerService: NgxSpinnerService, private alertifyService: AlertifyService) {
     super(spinnerService);
   }
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
-  displayedColumns: string[] = ['Name', 'stock', 'price', 'createdDate', 'updatedDate'];
+  displayedColumns: string[] = ['Name', 'stock', 'price', 'createdDate', 'updatedDate','delete','edit'];
   dataSource: MatTableDataSource<List_Product> = new MatTableDataSource();
 
   async ngOnInit(): Promise<void> {
@@ -28,9 +29,18 @@ export class ListComponent extends BaseComponent implements OnInit, AfterViewIni
   }
 
   async ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+
+    await this.GetAndSetValuesToTable();
+  }
+
+  async GetAndSetValuesToTable() : Promise<void>
+  {
     const values = await this.GetProducts();
     this.dataSource = new MatTableDataSource<List_Product>(values?.datas);
-    this.dataSource.paginator = this.paginator;
+    this.paginator.length = values?.totalCount ? values.totalCount : 0;
+    
+    console.log(this.paginator.length);
   }
 
   async GetProducts(): Promise<{totalCount : number, datas :List_Product[]} | undefined> {
@@ -38,11 +48,6 @@ export class ListComponent extends BaseComponent implements OnInit, AfterViewIni
 
     return this.productService.read(this.paginator ? this.paginator.pageIndex : 5, this.paginator.pageSize, () => {
       this.hideSpinner(ApplicationSpinners.BallAtom);
-      this.alertifyService.message("Başarılı", {
-        messageType: MessageType.Success,
-        position: Position.TopRight,
-        dismissOthers: true
-      });
     }, (message: string) => {
       this.hideSpinner(ApplicationSpinners.BallAtom);
       this.alertifyService.message(message, {
@@ -67,10 +72,13 @@ export class ListComponent extends BaseComponent implements OnInit, AfterViewIni
       second: "2-digit",
       hour12: false,
     });
-
     return formattedDate;
   }
 
+  async on_pageChanged() : Promise<void>
+  {
+    await this.GetAndSetValuesToTable();
+  }
 }
 //x.Id,
 //x.Name,

@@ -4,11 +4,13 @@ using ECommerceAPI.Application.RequestParameters;
 using ECommerceAPI.Application.ViewModels.Products;
 using ECommerceAPI.Domain.Entities;
 using ECommerceAPI.Domain.Entities.Common;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Net;
+using System.Runtime.CompilerServices;
 
 namespace ECommerceAPI.API.Controllers
 {
@@ -45,7 +47,7 @@ namespace ECommerceAPI.API.Controllers
 
             return Ok(new
             {
-                productCount,
+                totalCount = productCount,
                 datas
             });
         }
@@ -87,7 +89,10 @@ namespace ECommerceAPI.API.Controllers
             await _productWriteRepository.RemoveAsync(id);
             await _productWriteRepository.SaveAsync();
 
-            return Ok();
+            return Ok(new
+            {
+                message = "Silme işlemi başarılı!"
+            });
         }
     }
 }

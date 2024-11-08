@@ -9,17 +9,23 @@ import { ListComponent } from './list/list.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
+
+import { DeleteDirective } from '../../../directives/admin/delete.directive';
+import { DeleteDialogComponent } from '../../../dialogs/delete-dialog/delete-dialog.component';
 
 @NgModule({
-  declarations: [ProductsComponent, CreateComponent, ListComponent],
+  declarations: [ProductsComponent, CreateComponent, ListComponent, DeleteDialogComponent],
   imports: [
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatPaginatorModule,
+    DeleteDirective,
+    MatDialogModule,
     MatTableModule,
     RouterModule.forChild([
       { path: "", component: ProductsComponent }
