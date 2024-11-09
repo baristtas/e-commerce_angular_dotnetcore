@@ -4,6 +4,7 @@ import { Create_Product } from '../../../../contracts/create_product';
 import { ApplicationSpinners, BaseComponent } from '../../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AlertifyOptions, AlertifyService, MessageType, Position } from '../../../../services/admin/alertify.service';
+import { FileUploadOptions } from '../../../../services/common/fileupload/fileupload.component';
 
 @Component({
   selector: 'app-create',
@@ -12,6 +13,14 @@ import { AlertifyOptions, AlertifyService, MessageType, Position } from '../../.
 })
 export class CreateComponent extends BaseComponent implements OnInit {
   @Output() productCreated : EventEmitter<Create_Product> = new EventEmitter();
+  @Output() fileUploadOptions : Partial<FileUploadOptions> = {
+    controller: "products",
+    action : "upload",
+    //queryString: string;
+    explanation: "Resimleri sürükleyin veya seçin",
+    accept: ".png, .jpg, .jpeg",
+    isAdminPage: true
+  }
 
   constructor(spinner: NgxSpinnerService, private productService: ProductService, private alertifyService: AlertifyService) {
     super(spinner);
